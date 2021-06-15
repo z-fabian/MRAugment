@@ -124,6 +124,9 @@ Slight differences from the published results is possible due to some implementa
 - `torchvision==0.9.1` doesn't support bicubic interpolation (as in the paper) for the affine transform on tensors. Instead, bilinear interpolation is used. 
 - The affine transform in `torchvision` is parameterized by a single scaling parameter and shearing along the x and y axes. The results in the paper were generated using a single shearing parameter and scaling along x and y axes (isotropic/anisotropic scaling).
 
+## License 
+MRAugment is MIT licensed, as seen in the [LICENSE](LICENSE) file. 
+
 ## Citation
 Coming soon.
 
