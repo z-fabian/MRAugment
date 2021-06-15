@@ -1,0 +1,32 @@
+accelerations:
+- 8
+aug_on: false
+batch_size: 1
+center_fractions:
+- 0.04
+challenge: multicoil
+chans: 18
+check_val_every_n_epoch: 1
+combined_scanner_val: true
+lr: 0.0003
+lr_gamma: 0.1
+lr_step_size: 50
+mask_type: random
+max_epochs: 50
+num_cascades: 12
+pools: 4
+resume_from_checkpoint: null
+seed: 42
+sens_chans: 8
+sens_pools: 4
+train_resolution:
+- 640
+- 368
+train_scanners:
+- Aera
+val_scanners:
+- Skyra
+- Biograph_mMR
+- Prisma_fit
+volume_sample_rate: 1.0
+weight_decay: 0.0

@@ -1,0 +1,27 @@
+accelerations:
+- 8
+aug_on: false
+batch_size: 1
+center_fractions:
+- 0.04
+challenge: multicoil
+chans: 18
+check_val_every_n_epoch: 1
+lr: 0.0003
+lr_gamma: 0.1
+lr_step_size: 50
+mask_type: random
+max_epochs: 50
+num_cascades: 12
+pools: 4
+resume_from_checkpoint: null
+seed: 42
+sens_chans: 8
+sens_pools: 4
+train_resolution:
+- 320
+- 320
+train_val_seed: 0
+train_val_split: 0.8
+volume_sample_rate: 0.25
+weight_decay: 0.0
