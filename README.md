@@ -19,7 +19,7 @@ CUDA-enabled GPU is necessary to run the code. We tested this code using:
 
 ## Installation
 To install the necessary packages, create a new virtual environment and run
-```
+```bash
 git clone --recurse-submodules https://github.com/z-fabian/MRAugment
 cd MRAugment
 ./install.sh
@@ -51,7 +51,7 @@ After downloading the .h5 files the dataset has to be converted to a format comp
 ## Training
 ### fastMRI knee
 To train a VarNet model on the fastMRI knee dataset, run the following in the terminal:
-```
+```bash
 python mraugment_examples/train_varnet_fastmri.py \
 --config_file PATH_TO_CONFIG \
 --data_path DATA_ROOT \
@@ -65,7 +65,7 @@ python mraugment_examples/train_varnet_fastmri.py \
 
 ### Stanford datasets
 Similarly, to train on either of the Stanford datasets, run
-```
+```bash
 python mraugment_examples/train_varnet_stanford.py \
 --config_file PATH_TO_CONFIG \
 --data_path DATA_ROOT \
@@ -81,12 +81,13 @@ Config files for different experiments can be found [here] (`mraugment_examples/
 - `TRACK` is either `singlecoil` or `multicoil`
 - `SIZE` describes the percentage of training data used (for example `train10` uses 10% training data)
 - `DA` denotes that data augmentation is turned on
+
 Furthermore, for scanner transfer experiments `{TRAIN}T{VAL}T` denotes the field strength of scanners in the train and val datasets.
 
 ## Evaluating models
 ### fastMRI knee
 To evaluate a model trained on fastMRI knee data on the validation dataset, run
-```
+```bash
 python mraugment_examples/eval_varnet_fastmri.py \
 --checkpoint_file CHECKPOINT \
 --data_path DATA_DIR \
@@ -100,7 +101,7 @@ python mraugment_examples/eval_varnet_fastmri.py \
 
 ### Stanford datasets
 To evaluate on one of the Stanford datasets run
-```
+```bash
 python mraugment_examples/eval_varnet_stanford.py \
 --checkpoint_file CHECKPOINT \
 --data_path DATA_DIR \
@@ -113,7 +114,7 @@ python mraugment_examples/eval_varnet_stanford.py \
 
 ## Custom training
 To experiment with different data augmentation settings see all available training options by running
-```
+```bash
 python mraugment_examples/train_varnet_fastmri.py --help
 ```
 Alternatively, the `.yaml` files in `mraugment_examples/experiments` can be customized and used as config files as described before.
