@@ -5,7 +5,7 @@ MRAugment is a physics-aware data augmentation pipeline for accelerated MRI that
 
 ![](assets/mraugment_flowchart.png)
 
-This PyTorch implementation accompanies the ICML2021 paper *Data augmentation for deep learning based accelerated MRI reconstruction with limited data*.
+This PyTorch implementation accompanies the ICML2021 paper *Data augmentation for deep learning based accelerated MRI reconstruction with limited data*.  [[`arXiv`](https://arxiv.org/abs/2106.14947)]
 
 This repository contains code to train and evaluate a [VarNet](https://arxiv.org/abs/2004.06688) model on publicly available MRI reconstruction datasets, however MRAugment can be used with any deep learning model.
 
