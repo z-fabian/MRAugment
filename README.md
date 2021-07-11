@@ -1,8 +1,8 @@
 # MRAugment
 This is the PyTorch implementation of MRAugment, a physics-aware data augmentation pipeline for accelerated MRI that can greatly improve reconstruction quality when training data is scarce.
-> [**Data augmentation for deep learning based accelerated MRI reconstruction with limited data**](https://arxiv.org/abs/2106.14947),  
+> [**Data augmentation for deep learning based accelerated MRI reconstruction with limited data**](http://proceedings.mlr.press/v139/fabian21a.html),  
 > Zalan Fabian, Reinhard Heckel, Mahdi Soltanolkotabi  
-> To appear: International Conference on Machine Learning (ICML), 2021   
+> International Conference on Machine Learning (ICML), 2021   
 > *arXiv preprint ([arXiv:2106.14947](https://arxiv.org/abs/2106.14947))*    
 
 ![](assets/recons.gif)
@@ -131,7 +131,17 @@ Slight differences from the published results is possible due to some implementa
 MRAugment is MIT licensed, as seen in the [LICENSE](LICENSE) file. 
 
 ## Citation
-Coming soon.
+If you find our paper useful, please cite
+```bibtex
+@inproceedings{fabian2021data,
+  title={Data augmentation for deep learning based accelerated MRI reconstruction with limited data},
+  author={Fabian, Zalan and Heckel, Reinhard and Soltanolkotabi, Mahdi},
+  booktitle={International Conference on Machine Learning},
+  pages={3057--3067},
+  year={2021},
+  organization={PMLR}
+}
+```
 
 ## Acknowledgments and references
 - [fastMRI repository]( https://github.com/facebookresearch/fastMRI)
