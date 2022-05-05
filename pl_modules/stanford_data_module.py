@@ -230,7 +230,7 @@ class StanfordDataModule(pl.LightningDataModule):
         parser.add_argument(
             "--num_workers",
             default=4,
-            type=float,
+            type=int,
             help="Number of workers to use in data loader",
         )
         return parser
