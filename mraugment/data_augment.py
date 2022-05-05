@@ -389,13 +389,13 @@ class DataAugmentor:
         # Related to transformation limits
         # --------------------------------------------
         parser.add_argument(
-            '--aug_max_translation-x', 
+            '--aug_max_translation_x', 
             type=float,
             default=0.125, 
             help='Maximum translation applied along the x axis as fraction of image width'
         )
         parser.add_argument(
-            '--aug_max_translation-y',
+            '--aug_max_translation_y',
             type=float, 
             default=0.125, 
             help='Maximum translation applied along the y axis as fraction of image height'
@@ -407,13 +407,13 @@ class DataAugmentor:
             help='Maximum rotation applied in either clockwise or counter-clockwise direction in degrees.'
         )
         parser.add_argument(
-            '--aug_max_shearing-x', 
+            '--aug_max_shearing_x', 
             type=float, 
             default=15.0, 
             help='Maximum shearing applied in either positive or negative direction in degrees along x axis.'
         )
         parser.add_argument(
-            '--aug_max_shearing-y', 
+            '--aug_max_shearing_y', 
             type=float, 
             default=15.0, 
             help='Maximum shearing applied in either positive or negative direction in degrees along y axis.'
